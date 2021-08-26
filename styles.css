@@ -1,0 +1,22 @@
+body {
+  background-color:#ccc;
+  padding: 20px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.promo {
+  margin: 2rem 0;
+  display: flex;
+  background-color: white;
+  padding: 2rem;
+}
+
+.thumbnail {
+  width: 200px;
+  margin-right: 2rem;
+}
