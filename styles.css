@@ -16,7 +16,19 @@ body {
   padding: 2rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .promo {
+    flex-direction: column;
+  }
+}
+
 .thumbnail {
   width: 200px;
   margin-right: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .thumbnail {
+    width: 100%;
+  }
 }
