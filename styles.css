@@ -1,6 +1,7 @@
 body {
   background-color:#ccc;
   padding: 20px;
+  border: groove;
 }
 
 .wrapper {
