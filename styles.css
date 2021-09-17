@@ -1,3 +1,4 @@
+
 body {
   background-color:#ccc;
   padding: 20px;
@@ -29,6 +30,7 @@ body {
 .thumbnail {
   width: 200px;
   margin-right: 2rem;
+  
 }
 
 @media only screen and (max-width: 600px) {
@@ -36,21 +38,39 @@ body {
     width: 100%;
   }
 }
+
 #experience {
    margin: 1rem;
    margin-left:2rem;
 
-
-
-}
+  }
   
 
 #Hobbies {
   margin:1rem;
-  margin-left:2rem;
+  margin-left:2rem;}
   
 
+
+
+ a {
+    color:white;
+    font-size: 4rm;
+    
+ }
+
+ a:hover {
+   color:#ff3030;
+ }
+
+ .navbar a {
+  text-decoration: none;
+  display:block;
+  float: left;
+  padding: 20px 20px;
+  
 }
-a {
-  text-align: center;
-}
+ 
+
+
+
