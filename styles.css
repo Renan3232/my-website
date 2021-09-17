@@ -8,14 +8,14 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  background-color: rgb(173, 173, 197);
+  background-color:#99cccc;
   
 }
 
 .promo {
   margin: 2rem 0;
   display: flex;
-  background-color: rgb(198, 201, 238);
+  background-color:#668b8b;
   padding: 2rem;
 }
 
@@ -23,8 +23,9 @@ body {
   .promo {
     flex-direction: column;
   }
-}
 
+
+}
 .thumbnail {
   width: 200px;
   margin-right: 2rem;
@@ -34,4 +35,22 @@ body {
   .thumbnail {
     width: 100%;
   }
+}
+#experience {
+   margin: 1rem;
+   margin-left:2rem;
+
+
+
+}
+  
+
+#Hobbies {
+  margin:1rem;
+  margin-left:2rem;
+  
+
+}
+a {
+  text-align: center;
 }
