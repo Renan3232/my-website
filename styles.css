@@ -1,76 +1,214 @@
 
-body {
-  background-color:#ccc;
-  padding: 20px;
-  border: groove;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
+* {
+padding: 0;
+margin:0;
+box-sizing: border-box;
 }
 
-.wrapper {
+html{
+  font-size: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+
+
+.container {
+  width: 80%;
+  margin:0% auto;
+
+  
+
+}
+
+
+header {
+  background-color:#f3f6f4;
+  position: fixed;
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  background-color:#99cccc;
+  
   
 }
 
-.promo {
-  margin: 2rem 0;
-  display: flex;
-  background-color:#668b8b;
-  padding: 2rem;
-}
 
-@media only screen and (max-width: 600px) {
-  .promo {
-    flex-direction: column;
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+  
+
+}
+  
+  nav {
+    float:left;
+   
+
+
+  }
+  
+  nav ul{
+    margin:0%;
+    padding: 0%;
+    list-style: none;
+
+  }
+  
+  
+  nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding: 25px;
+    position: relative;
+
+
   }
 
+  nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform:none;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+  }
+  
+  
+nav a:hover {
+  color:#4abb5f;
+}  
+  
+nav a::before {
+  content:"";
+  display: block;
+  height: 5px;
+  background-color:#4abb5f;
+  
+  
+  position: absolute;
+  top:0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+
+
 
 }
-.thumbnail {
-  width: 250px;
-  margin-right: 2rem;
+  
+nav a:hover::before {
+  width: 70%;
+
+}
+  
+/* Section*/
+
+section {
+  background-image: url(images/castata.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
   
 }
-
-@media only screen and (max-width: 600px) {
-  .thumbnail {
-    width: 100%;
+  p{
+    margin:50%;
+    color: wheat;
   }
-}
 
-
-a {
-    color:white;
-    font-size: 4rm;
+  h1{
+    color:#f3f6f4;
+    font-size: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
     
- }
-
- a:hover {
-   color:#ff3030;
- }
-
- .navbar a {
-  text-decoration: none;
-  display:block;
-  float:right;
-  padding: 25px 25px;
   
 
+  }
+
+  .text  {
+   text-align:center;
+   padding: 20%;
+ }
+
+/* button*/
+
+ .button {
+  background-color:#f3f6f4;;
+  color: black;
+  font-size: 15px;
+  padding:20px;
+  cursor:pointer;
+  border-radius: 4px;
+  display: inline-block;
+  border:none;
+  width: 200px;
+  transition: all 0.5s;
+  margin: 10%;
+  font-family: 'Source Sans Pro', sans-serif;
+
 }
 
- footer {
-  background:#668b8b;
-  font-size:20px ;
-  text-align:center
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-#renan {
-  font-size: 25px;
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*Article*/
+
+article {
+  background-color:white;
+  
+}
+
+.about p {
+  font-size: 20px;
+  color:#4abb5f;
+  margin-top:50px;
+  margin-bottom: 50px;
+  margin-left: 65px;
+  margin-right:65px;
+  font-family: 'Source Sans Pro', sans-serif;
+  
+}
+
+/*Gallery*/
+
+div.gallery {
  
+  margin-top:20px;
+  margin-left:140px;
+ 
+  margin-bottom: 20px;
+  border: 1px sol
+  float: left;
+
 }
 
-p{
- font-size: 20px;
+.img1 {
+  margin-right: 50px;
+
 }
 
+.img2 {
+  margin-right: 50px;
+}
