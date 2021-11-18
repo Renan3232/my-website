@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
+  
+
 
 * {
 padding: 0;
@@ -42,8 +44,9 @@ header::after {
 
 }
   
-  nav {
+  .nav {
     float:left;
+    display: flex;
    
 
 
@@ -85,8 +88,6 @@ nav a::before {
   display: block;
   height: 5px;
   background-color:#4abb5f;
-  
-  
   position: absolute;
   top:0;
   width: 0%;
@@ -135,7 +136,7 @@ section {
   background-color:#f3f6f4;;
   color: black;
   font-size: 15px;
-  padding:20px;
+  padding: 20px;
   cursor:pointer;
   border-radius: 4px;
   display: inline-block;
@@ -183,10 +184,7 @@ article {
 .about p {
   font-size: 20px;
   color:#4abb5f;
-  margin-top:50px;
-  margin-bottom: 50px;
-  margin-left: 65px;
-  margin-right:65px;
+  margin:50px 65px;
   font-family: 'Source Sans Pro', sans-serif;
   
 }
@@ -194,13 +192,12 @@ article {
 /*Gallery*/
 
 div.gallery {
- 
-  margin-top:20px;
-  margin-left:140px;
- 
-  margin-bottom: 20px;
-  border: 1px sol
-  float: left;
+
+display: flex;
+justify-content:center;
+
+border: 1px solid;
+float: left;
 
 }
 
@@ -212,3 +209,68 @@ div.gallery {
 .img2 {
   margin-right: 50px;
 }
+
+/*end of gallery*/
+
+/* new section*/
+  #winter  {
+   margin: 30px 65px;
+   color:#4abb5f;
+   font-size:20px;
+ }
+
+
+
+ 
+  
+ 
+@media all and (max-width: 700px) {
+  .about p {
+    font-size:15px;
+  }
+
+  .flex-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: relative;
+    font-size: 5px;
+    background-color: #f3f6f4;
+    height:50px;
+  }
+
+   nav li {
+    display: none;
+  }
+  
+   h1{
+    font-size: 20px;
+  }
+
+   .button {
+   padding: 5px;
+   width: 100px;  
+   margin:5%;
+  }
+
+   .gallery-flex {
+    display: flex;
+    flex-flow: column ;
+    margin-left:50px; 
+    justify-content:flex-start;
+    
+    
+    
+  }
+
+  .gallery-flex a {
+    padding:5px;
+    max-width: 25%;
+
+
+
+
+  }
+
+
+
+  }
