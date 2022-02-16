@@ -6,79 +6,57 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>MyWebSite</title>
 </head>
 <body>
 
-<!--Header-->
+<!--Nav Bar -->
+  <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
-       <header>
-          <div class=flex-container>
-      
-            <nav>
-              <ul>
-                <li><a class="active" href="Things to do">Things to do</a></li>
-                <li><a href="#Places to go">Places to go</a></li>
-                <li><a href="#Plan your trip">Where to eat</a></li>
-                <li><a href="#Be Inspired">Where to stay</a></li>
-              </ul>
-            </nav>
-          </div>
-       </header>
 
-<!--End of Header-->
-
-<!--Section-->
-
-    <section>
-      <div class="text">
-       <  <h1>Welcome to Canela</h1>
-          <button class="button"><span>About</span> </button>
-       </div>
-    </section>
-
-  <!--End of Section-->
-
-<!--Article-->
-
-  <article>
-    <div class="about">
-      <p>Canela, meaning Cinnamon (or shin) in Portuguese, is a town located in the Serra Gaúcha of Rio 
-        Grande do Sul, Brazil. Both Canela and neighboring Gramado are important tourist locations and
-        they both draw many visitors each year. Ecotourism is very popular in the area and there are
-         many opportunities for hiking, rock climbing, horseback riding and river rafting. </p>
-        
-    </div>
-  </article>
-
-<!--end of article-->
-     
-<!--Gallery-->
-
- <div class="gallery-flex">
-    <a target="blank" href="https://www.youtube.com/watch?v=ftWvoRAzFRA">
-    <img class="img1" src="images/castata.jpg" alt="water fall Caracol width="100%" height="250"></a>
-    <a target="blank" href="https://www.youtube.com/watch?v=nhEU0-8rsLg">
-    <img class="img2"src="images/igeja 2.jpg" alt="canela church" width="300" height="250" ></a>
-    <a target="blank" href="https://www.youtube.com/watch?v=vGtZIxiAAns">
-    <img class="img3"src="images/bondinho.jpg" alt="canela church" width="250" height="250" ></a>
- </div>
-
-<!--end of gallery-->
-
-<!--when to visit Canela-->
- 
-<div class="about">
-  <h1 id="winter">The best time to visit Canela</h1>
-  <p>The busiest month for tourism in Canela, Brazil is January, followed by November and May. 
-    Prices for hotels and flights will be most expensive during these months, though you can save 
-    if you purchase well in advance. Tourists are unlikely to visit Canela in September. 
-    Those willing to visit at these times will likely find it the least expensive month.</p>
-
-  
+<!--automatic slideshow-->
+<div class="slideshow" style="max-width:100%">
+  <img class="mySlides" src="/my-website/images/bondinhos2.jpg" alt="">
+    <img class="mySlides" src="/my-website/images/castata.jpg"    alt "">
+  <img class="mySlides" src="/my-website/images/igeja 2.jpg"    alt="">
 </div>
 
 
 
 </body>
 </html>
+
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+  }
+
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  </script>
