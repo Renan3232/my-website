@@ -13,24 +13,25 @@
 
 <!--Nav Bar -->
   <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-
-<!--automatic slideshow-->
-<div class="slideshow" style="max-width:100%">
-  <img class="mySlides" src="/my-website/images/bondinhos2.jpg" alt="">
-  <img class="mySlides" src="/my-website/images/castata.jpg"    alt "">
-  <img class="mySlides" src="/my-website/images/igeja 2.jpg"    alt="">
-</div>
+    <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i> </a>
+  </div>
+    <!--automatic slideshow-->
+  <div class="slideshow" style="max-width:100%">
+    <img class="mySlides" src="/my-website/images/bondinhos2.jpg" alt="">
+     <img class="mySlides" src="/my-website/images/castata.jpg"    alt "">
+    <img class="mySlides" src="/my-website/images/igeja 2.jpg"    alt="">
+  </div>
 </body>
 </html>
+
+
+
+
 <script>
 var myIndex = 0;
 carousel();
@@ -44,7 +45,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 3000); // Change image every 3 seconds
+  setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
 function myFunction() {
